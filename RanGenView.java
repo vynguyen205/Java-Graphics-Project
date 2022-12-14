@@ -52,6 +52,8 @@ public class RanGenView extends JFrame {
      */
     
     public void draw() {
+        System.out.println("Painting 🎨");
+
         JPanel panel = new JPanel();
         JComponent component = new HappyFaceComponent();
         component.setPreferredSize(new Dimension(600,600));
@@ -98,7 +100,8 @@ public class RanGenView extends JFrame {
      */
     
     public void updateCanvas(int r, int g, int b) {
-        System.out.print("\n⭐️ New RBG: " + r + " " + g + " " + b + " ⭐️");
+        System.out.println("\n🎨 New RBG: " + r + " " + g + " " + b + " 🎨\n");
+        System.out.println("Canvas Updated ✅");
         userCustomColor = new Color(r,g,b);
         repaint();
     }
@@ -107,6 +110,7 @@ public class RanGenView extends JFrame {
      * This method asks the user questions.
      */
     public void modal() {
+        System.out.println("\n🚀 Modal has launched!\n");
         
         JOptionPane.showMessageDialog(null, GREETING);
         
